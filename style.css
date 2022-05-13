@@ -13,12 +13,12 @@
 
 .dashboard-container {
     height: 100%;
-    width: 15vw;
+    width: 13vw;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background: hotpink;
+    background: url(./images/bi-wood.png);
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -32,11 +32,11 @@
 .header-container {
     display: flex;
     justify-content: space-between;
-    background: coral;
+    background: darkred;
     flex-direction: column;
     max-width: 100vw;
-    margin-left: 15vw;
-    height: 160px;
+    margin-left: 13vw;
+    height: 90px;
     position: absolute;
     top: 0;
     right: 0;
@@ -53,7 +53,7 @@
 }
 
 .dash:hover {
-    transform: scaleX(1.1);
+    transform: scaleX(1.1) scaleY(1.2);
     transition: 400ms;
     color: yellow;
 }
@@ -86,16 +86,19 @@
 
 .header-sticky-container {
     margin-top: -50px;
-    border: 2px solid red;
     display: flex;
     flex-direction: row;
     position: sticky;
     top: 0;
+    margin-top: 90px;
+    margin-left: 13vw;
+    margin-bottom: 0;
     justify-content: center;
+    background: darkred;
 }
 
 .krusty-title {
-    text-shadow: 0.13rem 0.13rem #ff0000;
+    text-shadow: 0.13rem 0.13rem black;
 }
 
 .burger-img {
@@ -127,7 +130,6 @@ input {
 label {
     padding: 0.2rem;
     margin: 0.3rem;
-    color: black;
 }
 
 .icon-search {
@@ -157,17 +159,17 @@ label {
 
 .main-grid-container {
     display: grid;
-    margin-top: 160px;
+    margin-top: 0px;
     height: 100vh;
-    margin-left: 15vw;
-    grid-template-columns: 35% 35% 30%;
+    margin-left: 13vw;
+    grid-template-columns: minmax(0, 35%) minmax(0, 35%) auto;
     grid-auto-rows: 90px;
 }
 
 .side-container-one {
     grid-column: 3/4;
     grid-row: 1/5;
-    background: blue;
+    background: url(./images/wood-bi2.jpg);
     max-width: 100%;
     overflow: hidden;
     word-wrap: break-word;
@@ -179,10 +181,12 @@ label {
 .side-container-two {
     grid-column: 3/4;
     grid-row: 5/span 5;
-    background: red;
+    background: url(./images/wood-bi3.jpg);
     overflow: hidden;
     word-wrap: break-word;
     margin-bottom: 0.2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .cell-container {
@@ -195,6 +199,8 @@ label {
     margin: 0.2rem;
     padding: 0.5rem;
     color: black;
+    overflow: hidden;
+    background-color: pink;
 }
 
 .cell-icons {
@@ -213,9 +219,94 @@ label {
 .cell-icons i:hover {
     transform: scaleX(1.1) scaleY(1.1);
     transition: 300ms;
-    color: pink;
+    color: red;
 }
 
 .cell-subtitle {
     align-self: center;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 0rem;
+    line-height: 1;
+    color: darkred;
+}
+
+.cell-text {
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 0;
+    margin-top: -0.2rem;
+}
+
+.side-subtitle-one {
+    align-self: center;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    border: 2px solid white;
+    border-radius: 40%;
+    margin-top: 0.3rem;
+    text-shadow: 0.04rem 0.05rem red;
+}
+
+.side-container-one .subtitle {
+    text-align: center;
+    color: yellow;
+    font-size: 0.9rem;
+}
+
+.side-container-one .a {
+    margin: 1.3rem;
+}
+
+.side-subtitle-two {
+    color: black;
+    align-self: center;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 40%;
+    margin-top: 0.3rem;
+    text-shadow: 0.05rem 0.06rem red;
+}
+
+.side-text {
+    text-align: center;
+    color: darkred;
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+
+.friend-profile {
+    display: flex;
+    flex-direction: row;
+    background: rgba(205, 134, 63, 0.39);
+    border-radius: 30%;
+    border: 1px ridge brown;
+    margin: 0.3rem;
+}
+
+.friend-profile .icon {
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+.friend-text {
+    justify-self: center;
+    align-self: center;
+    color: darkred;
+}
+
+.friend-text span {
+    color: darkblue;
+    cursor: pointer;
+}
+
+.friend-text span:hover {
+    cursor: pointer;
+    transition: 400ms;
+    background: peachpuff;
+    padding: 0.1rem;
+    border-radius: 20%;
 }
