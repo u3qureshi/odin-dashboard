@@ -310,3 +310,29 @@ label {
     padding: 0.1rem;
     border-radius: 20%;
 }
+
+#copyright {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.6rem;
+    color: white;
+    z-index: 2;
+    margin-left: 0.3rem;
+}
+
+.fa-github {
+    padding-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: darkred;
+}
+
+
+/* Add a hover effect if you want */
+
+.fa-github:hover {
+    color: darkgoldenrod;
+    transition: 0.5s;
+    transform: scale(1.4);
+    text-decoration: none;
+}
