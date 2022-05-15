@@ -194,7 +194,7 @@ label {
 
 .name-text:hover {
     transition: 300ms;
-    color: black;
+    color: blue;
     font-weight: 900;
     text-decoration: underline;
 }
